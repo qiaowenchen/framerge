@@ -15,7 +15,7 @@ net get xtsfsp, from("https://raw.githubusercontent.com/kerrydu/xtsfsp/main/xtsf
 
 # Compared to merge and joinby for handling large datasets
 The `framerge` directly merge data between frames and avoid saving files to disks when using `merge` or `joinby` in the frame context. Intuitively, saving unnecessary temporary files into the disk may be inefficient, especially for large datasets. We compared the time costing of `framerge 1:m`, `merge 1:m`, `framerge m:m` and `joinby` for merging data between large datasets with different observations scale. All the code of testing and drawing can be seen in [test](). 
-[//]: (All the tests are conducted on a machine with Stata 18(8 cores), 12th Gen Intel(R) Core(TM) i9-12900 CPU @2.40GHz, 128GB RAM @4800MHz, and HDD Raid0. )
+<!-- (All the tests are conducted on a machine with Stata 18(8 cores), 12th Gen Intel(R) Core(TM) i9-12900 CPU @2.40GHz, 128GB RAM @4800MHz, and HDD Raid0. -->
 
 ![macmini](https://github.com/user-attachments/assets/c1c755fc-79a6-4469-b76f-1facc3c1f2dd)
 
