@@ -43,7 +43,7 @@ If you use this module, please cite the following papers:
 	langid = {english}
 }
 ```
-
+Ho, A. T. Y., K. P. Huynh, D. T. Jacho-Ch´avez, and D. Rojas-Baez. 2021. Data Science in Stata 16: Frames, Lasso, and Python Integration. Journal of Statistical Software 98. http://www.jstatsoft.org/v98/s01/
 ```
 @article{ho_data_2021,
 	title = {Data Science in \textit{Stata} 16: Frames, Lasso, and \textit{Python} Integration},
@@ -61,3 +61,4 @@ If you use this module, please cite the following papers:
 	langid = {english}
 }
 ```
+Mazrekaj, D., and J. Wursten. 2021. Stata tip 142: joinby is the real merge m:m. The Stata Journal 21(4): 1065–1068. https://doi.org/10.1177/1536867X211063416.
