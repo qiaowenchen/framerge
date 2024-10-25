@@ -6,7 +6,10 @@ p framerge - Stata commands for data merging
 
 * l word-to-show path-or-url [description]
 * t: Directories within site:
-* t path [description]
+* t https://github.com/QiaowenChen/framerge/tree/main/framerge [description]
 * Packages:
-* p pkgname [description]
+* p framerge.ado [description]
+* p framerge16.ado
+* p framerge17.ado
+* p framerge.sthlp
 
