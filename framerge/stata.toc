@@ -1,5 +1,7 @@
 v 2
-d Kerui Du, Qiaowen Chen Xiamen University (kerrydu@xmu.edu.cn chenqiaowen@stu.xmu.edu.cn)
+d Kerui Du, Qiaowen Chen
+d Xiamen University 
+d kerrydu@xmu.edu.cn chenqiaowen@stu.xmu.edu.cn
 p framerge - Stata commands for data merging
 
 * l word-to-show path-or-url [description]
