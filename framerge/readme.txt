@@ -18,6 +18,6 @@ Author 2 email: chenqiaowen@stu.xmu.edu.cn
 
 Help keywords: framerge
 
-File list: framerge.ado framerge.sthlp
+File list: framerge.ado framerge16.ado framerge17.ado framerge.sthlp
 
-Notes:  All tests in the help file are based on Stata online datasets, which users can download using the webuse command. For the merge 1:m and joinby examples in our manuscript, the additional datasets required are discharge1.dta, discharge1_e3.dta, discharge2.dta, and discharge2_e5.dta.
+Notes:  All tests in the help file are based on Stata online datasets, which users can download using the webuse command. For the merge 1:m and joinby examples in our manuscript.
