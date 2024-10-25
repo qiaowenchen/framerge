@@ -9,7 +9,7 @@ See the [manuscript]() for details.
 # Install with Stata Command
 ```
 ** install from github
-
+net install framerge, from("https://github.com/qiaowenchen/framerge/raw/main/framerge/") replace
 ```
 <!-- net install framerge, from("https://raw.githubusercontent.com/kerrydu/xtsfsp/main/xtsfsp/ado") replace
 net get xtsfsp, from("https://raw.githubusercontent.com/kerrydu/xtsfsp/main/xtsfsp/ado") replace -->
