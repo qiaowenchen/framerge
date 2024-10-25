@@ -1,0 +1,22 @@
+v 2
+
+d framerge. Merging data between frames
+d
+d Author: Kerui Du, Qiaowen Chen
+d Support: kerrydu@xmu.edu.cn chenqiaowen@stu.xmu.edu.cn
+d
+d framerge consists of several ado files: framerge.ado framerge16.ado framerge17.ado
+
+d KW: framerge
+d KW: frame
+d KW: merge
+d KW: joinby
+
+d Requires: Stata version 16
+d Distribution-Date: 202401025
+
+
+f framerge.ado
+f framerge.sthlp
+f framerge16.ado
+f framerge17.ado
