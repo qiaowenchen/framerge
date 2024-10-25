@@ -1,6 +1,6 @@
 v 2
 
-d framerge. Merging data between frames
+d framerge： 1:1, m:1, 1:m and m:m link between frames and copy variables from the using frames in Stata
 d
 d Author: Kerui Du, Qiaowen Chen
 d Support: kerrydu@xmu.edu.cn chenqiaowen@stu.xmu.edu.cn
