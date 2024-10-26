@@ -14,17 +14,24 @@ net install framerge, from("https://github.com/qiaowenchen/framerge/raw/main/fra
 <!-- net install framerge, from("https://raw.githubusercontent.com/kerrydu/xtsfsp/main/xtsfsp/ado") replace
 net get xtsfsp, from("https://raw.githubusercontent.com/kerrydu/xtsfsp/main/xtsfsp/ado") replace -->
 # Compared to merge and joinby for handling large datasets
-The `framerge` directly merge data between frames and avoid saving files to disks when using `merge` or `joinby` in the frame context. Intuitively, saving unnecessary temporary files into the disk may be inefficient, especially for large datasets. We compared the time costing of `framerge 1:m`, `merge 1:m`, `framerge m:m` and `joinby` for merging data between large datasets with different observations scale. All the code of testing and drawing can be seen in [test](). 
+The `framerge` directly merge data between frames and avoid saving files to disks when using `merge` or `joinby` in the frame context. Intuitively, saving unnecessary temporary files into the disk may be inefficient, especially for large datasets. We compared the time costing of `framerge 1:m`, `merge 1:m`, `framerge m:m` and `joinby` for merging data between large datasets with different observations scale. All the code of testing and drawing can be seen in [test](https://github.com/qiaowenchen/framerge/tree/main/test). 
 
 The following tests are conducted on a machine with Stata 18(8 cores), 12th Gen Intel(R) Core(TM) i9-12900 CPU @2.40GHz, 128GB RAM @4800MHz, and HDD Raid0.
-
-![macmini](https://github.com/user-attachments/assets/ac5a3639-d67c-48ab-a167-5c166be02390)
+![hdd](https://github.com/user-attachments/assets/73d59c05-911a-4a24-a25b-ad07eb6d11e6)
 
 In merging 1:m and m:m, `framerge` takes less time than `merge` and `joinby` on average, except for merging 1:m with 10,000 observations, suggesting that our `framerge` command is more efficient than `merge` and `joinby` in handling large data. It is worth to mention that the gain of speed is from avoiding the slow Input/Output operations by saving and reading files.
 
 The following tests are perform with the NVMe drive. Our findings indicate that framerge still outperforms both merge and joinby regarding speed when handling big datasets by avoiding the slow IO operation even with an NVMe drive. 
 
 ![nvme](https://github.com/user-attachments/assets/ac498ad2-9e91-479f-a938-5dc3bd6e9f86)
+
+The following tests are conducted on a Mac mini with the Apple M2 chip and 16GB RAM. The Mac mini 2M, with its superior I/O speed, outperforms the other configurations in terms of memory reading and writing. Even so, when we adopted the Mac mini to test our `framerge` command, we found that the `framerge` command still outperformed `merge` and `joinby`, further validating the command's efficiency.
+
+![macmini](https://github.com/user-attachments/assets/ac5a3639-d67c-48ab-a167-5c166be02390)
+
+The above results indicate that `framerge`'s advantage of not needing frequent file read and write operations avoids slow I/O, effectively increasing the speed of big datasets merging.
+
+
 # Citation
 If you use this module, please cite the following papers:
 
