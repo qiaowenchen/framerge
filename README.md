@@ -7,13 +7,13 @@ See the [manuscript]() for details.
 * Stata 16 or later version
 
 
-
+<!--
 # Install with Stata Command
 ```
 ** install from github
 net install framerge, from("https://github.com/qiaowenchen/framerge/raw/main/framerge/") replace
 ```
-<!--
+
  net install framerge, from("https://raw.githubusercontent.com/kerrydu/xtsfsp/main/xtsfsp/ado") replace
 net get xtsfsp, from("https://raw.githubusercontent.com/kerrydu/xtsfsp/main/xtsfsp/ado") replace -->
 
