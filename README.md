@@ -12,6 +12,7 @@ See the [manuscript]() for details.
 ```
 ** install from github
 net install framerge, from("https://github.com/qiaowenchen/framerge/raw/main/framerge/") replace
+https://raw.githubusercontent.com/qiaowenchen/framerge/main/framerge/framerge.ado
 ```
 
  net install framerge, from("https://raw.githubusercontent.com/kerrydu/xtsfsp/main/xtsfsp/ado") replace
